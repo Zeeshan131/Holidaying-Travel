@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="required/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="HotelList.css">
+    <title>Table of different Hotels around India</title>
+</head>
+<body class="container">
+
+    <div class="row">
+        <div class="col">
+            <div class="card card-body">
+                <p>You can search by hotel Name</p>
+                <input id="search-input" class="form-control" type="text">
+            </div>
+            <br>
+            <p>Click the heading bar to sort the data</p>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <tr class="bg-info">
+            <th data-column="name" data-order="desc" class="bg-info">Name &#9650</th>
+            <th data-column="rating" data-order="desc">Rating &#9650</th>
+            <th data-column="description" data-order="desc">Description &#9650</th>
+        </tr>
+        
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+    
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="required/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="required/bootstrap4/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="HotelList.js"></script>
+</body>
+</html>
